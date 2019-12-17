@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>test</title>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: aqua;
+      }
+      h1 {
+        font-size: xx-large;
+      }
+    </style>
+    <h1
+      style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+    >
+      Genie in a bottle
+    </h1>
+
+    <h2>Ask me a question!</h2>
+    <input type="text" id="myText" value="" placeholder="type a question" />
+
+    <button type="button" onclick="answer()">
+      Try it
+    </button>
+
+    <p id="test" onmouseover="changeit('in')" onmouseout="changeit('out')">
+      this is the original
+    </p>
+    <button
+      id="test"
+      type="button"
+      onclick="changeit('in')"
+      ondblclick="changeit('out')"
+    >
+      click once or double click to change
+    </button>
+    <p>here are the current options</p>
+    <button onclick="clickme('buy')">buy a product</button>
+    <button onclick="clickme('browser')">browse a product</button>
+    <button onclick="clickme('help')">get help</button>
+  </body>
+</html>
